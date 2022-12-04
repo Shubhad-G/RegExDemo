@@ -21,6 +21,16 @@ namespace RegexDemo
             string lastName = Console.ReadLine();
             bool isMatchLname = patterns.ValidateFirstName(lastName);
             patterns.Validate(isMatchLname);
+
+            Console.WriteLine("enter the email");
+            string email = Console.ReadLine();
+            bool isMatchEmail = patterns.ValidateFirstName(email);
+            patterns.Validate(isMatchEmail);
+
+            Console.WriteLine("enter the mobile number");
+            string phoneNo = Console.ReadLine();
+            bool isMatchPhone=patterns.ValidatePhone(phoneNo);
+            patterns.Validate(isMatchPhone);
             Console.ReadLine(); 
         }
     }
