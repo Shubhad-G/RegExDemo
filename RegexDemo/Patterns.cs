@@ -19,5 +19,12 @@ namespace RegexDemo
         {
             return Regex.IsMatch(firstName,REGEX_FIRSTNAME);
         }
+        public void Validate(bool isMatch)
+        {
+            if (isMatch)
+                Console.WriteLine("is validated");
+            else
+                Console.WriteLine("not validated");
+        }
     }
 }
